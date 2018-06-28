@@ -1,0 +1,15 @@
+{
+	"env": {
+		"node": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2017,
+		"sourceType": "module"
+	},
+	"extends": ["airbnb-base"],
+	"rules": {
+		"no-console": "off",
+		"arrow-body-style": "off",
+		"prefer-destructuring": ["error", { "object": true, "array": false }]
+	}
+}

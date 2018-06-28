@@ -1,0 +1,29 @@
+{
+	"name": "tangle-visualiser",
+	"version": "0.1.0",
+	"description": "IOTA Tangle live transaction visualiser",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"author": {
+		"name": "Rihards Gravis",
+		"email": "rihards@gravis.lv",
+		"url": "https://github.com/rihardsgravis"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/iota-community/tangle-visualiser.git"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^6.0.0",
+		"express": "^4.16.2",
+		"iota.lib.js": "^0.4.7",
+		"lokijs": "^1.5.2",
+		"pug": "^2.0.0-rc.4",
+		"socket.io": "^2.0.4",
+		"vivagraphjs": "^0.10.0",
+		"zeromq": "^4.6.0"
+	}
+}

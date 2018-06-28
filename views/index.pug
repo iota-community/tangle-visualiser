@@ -1,0 +1,34 @@
+doctype html
+html
+   head
+      meta(charset="utf-8")
+      title Tangle Visualiser
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      link(rel="stylesheet" href="/style.css")
+   body
+      #sidebar
+         #legend
+            | uncofirmed tx
+            span(style='background:#3E4040;')
+            br
+            | confirmed tx
+            span(style='background:#6340BB;')
+            br
+            | confirmed tx with value
+            span(style='background:#00AA97;')
+         #stats
+            p -- t/m
+            p -- I/m
+         div
+            a#log-switch [ ] log
+            a#help [?]
+            a#hide [X]
+      p#hover
+      #tangle
+      #log
+      script.
+         const url = "#{url}";
+         const explorerURL = "#{explorerURL}";
+      script(src="/socket.io/socket.io.js")
+      script(src="/vivagraph/vivagraph.min.js")
+      script(src="/visualiser.js")

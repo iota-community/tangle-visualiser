@@ -1,0 +1,128 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+body {
+	background: #04001d;
+	font-family: Inconsolata, monospace;
+}
+
+a,
+body.hover {
+	cursor: pointer;
+}
+
+#tangle {
+	width: 100vw;
+	height: 100vh;
+}
+
+#hover,
+#sidebar {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	color: #fff;
+	z-index: 2;
+	font-size: 12px;
+	text-align: right;
+}
+
+.b {
+	display: block;
+	font-size: 14px;
+}
+
+#hover {
+	right: auto;
+	left: 20px;
+	top: 20px;
+	bottom: auto;
+}
+
+#sidebar div:last-child a {
+	margin-left: 8px;
+}
+
+#sidebar p:nth-child(2) {
+	margin-bottom: 12px;
+}
+
+a,
+span {
+	color: #00aa97;
+}
+
+span.e {
+	color: #6340bb;
+}
+
+a {
+	user-select: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.dg {
+	overflow: visible;
+}
+
+#sidebar div:last-child {
+	margin-top: 12px;
+}
+
+#sidebar.hidden #stats,
+#sidebar.hidden #log-switch,
+#sidebar.hidden #help {
+	display: none;
+}
+
+#sidebar.hidden #hide {
+	opacity: 0.5;
+}
+
+#legend {
+	text-align: right;
+	margin-bottom: 30px;
+	display: none;
+}
+
+#legend.active {
+	display: block;
+}
+
+#legend span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 6px;
+	height: 6px;
+	margin-left: 6px;
+}
+
+#log {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: #fff;
+	font-size: 11px;
+	line-height: 21px;
+}
+
+#log p {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+#log p:hover {
+	opacity: 1;
+}
+
+#log span {
+	padding: 0 6px 0 0;
+}
